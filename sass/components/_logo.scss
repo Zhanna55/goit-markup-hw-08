@@ -1,0 +1,13 @@
+.logo {
+  font-family: var(--logo-font-family);
+  @include font(700, 26px, 1.19, 0.03em);
+  text-decoration: none;
+  display: block;
+  color: var(--logo-color);
+  &__decoration {
+    color: var(--accent-color);
+  }
+  &--light {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,9 @@
+.link {
+  @include font(500, null, 1.14, 0.02em);
+  color: var(--title-text-color);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

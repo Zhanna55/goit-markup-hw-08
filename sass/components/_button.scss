@@ -1,0 +1,19 @@
+.button {
+  @include font(700, 16px, 1.88, 0.06em);
+  font-family: inherit;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  min-width: 200px;
+  border: 1px solid transparent;
+  padding: 10px 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-accent-color);
+  }
+}
