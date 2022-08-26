@@ -1,13 +1,26 @@
 .menu-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  width: 326px;
+  height: 91px;
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @include tablet {
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
-.menu-list-item {
+.menu-list-btn {
+  height: 38px;
   font-family: inherit;
-   @include font(500,16px,1.63,0.03em);
+  @include font(500, 16px, 1.63, 0.03em);
   text-align: center;
   cursor: pointer;
   padding: 6px 22px;
@@ -33,7 +46,13 @@
   gap: 30px;
 }
 .projects-list-item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .projects-link {
   display: block;
@@ -57,14 +76,23 @@
   top: 0;
   left: 0;
   transform: translateY(100%);
-   @include font(400,18px,1.56,0.03em);
-  padding: 63px 24px;
+  @include font(400, 18px, 1.56, 0.03em);
+  padding: 10px 10px;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   transition: transform var(--transition-duration) var(--transition-timing-function);
+  @include mobile {
+    padding: 77px 24px;
+  }
+  @include tablet {
+    padding-top: 49px;
+  }
+  @include desktop {
+    padding: 63px, 24px;
+  }
   .projects-link:hover &,
   .projects-link:focus & {
     transform: translateY(0);
@@ -77,11 +105,11 @@
   border-left: 1px solid #eeeeee;
 }
 .projects-title {
-   @include font(700,18px,2,0.06em);
+  @include font(700, 18px, 2, 0.06em);
   margin-bottom: 4px;
   color: var(--title-text-color);
 }
 .projects-text {
-   @include font(400,16px,1.88,0.03em);
+  @include font(400, 16px, 1.88, 0.03em);
   color: var(--primary-text-color);
 }

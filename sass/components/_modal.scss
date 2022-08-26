@@ -20,13 +20,21 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration) var(--transition-timing-function);
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
+  width: 100vw;
+  min-height: 609px;
+  padding: 40px 20px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primary-bg-color);
+  @include mobile {
+    padding: 40px;
+    width: 450px;
+  }
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
   }
@@ -56,10 +64,13 @@
   fill: currentColor;
 }
 .modal-title {
-  @include font(700, 20px, 1.15, 0.03em);
+  @include font(700, 20px, 1.5, 0.03em);
   text-align: center;
   margin-bottom: 12px;
   color: var(--title-text-color);
+  @include desktop {
+    line-height: 1.15;
+  }
 }
 .form-field {
   display: block;
@@ -125,13 +136,19 @@
 
 .form-field-checkbox {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 24px;
   margin-bottom: 30px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(null, 12px, 1.17, 0.03em);
   color: var(--primary-text-color);
+  @include mobile {
+    flex-wrap: nowrap;
+  }
+  @include desktop {
+    @include font(null, 14px, 1.71, 0.03em);
+  }
 }
 .form-checkbox {
   position: absolute;
@@ -149,9 +166,11 @@
   display: inline-block;
   margin-left: 7px;
   text-decoration-line: underline;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(null, 12px, 1.17, 0.03em);
   color: var(--accent-color);
+  @include desktop {
+    @include font(null, 14px, 1.71, 0.03em);
+  }
 }
 
 .form-check {
@@ -160,7 +179,7 @@
   justify-content: center;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
   border-radius: 2px;
   border: 2px solid var(--title-text-color);
   background-color: #ffffff;

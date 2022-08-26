@@ -7,15 +7,27 @@
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 .navigation {
   display: flex;
 }
 .site-nav {
-  display: flex;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -43,22 +55,131 @@
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
-  &__item:not(:last-child) {
-    margin-right: 50px;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
   }
+  @include desktop {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  // &__item:not(:last-child) {
+  //   @include desktop {
+  //     margin-right: 50px;
+  //   }
+  // }
   &__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @include font(500, 12px, 1.17, 0.02em);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 8px;
     color: var(--primary-text-color);
     transition: color var(--transition-duration) var(--transition-timing-function);
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      justify-content: center;
+      gap: 10px;
+      font-size: 14px;
+    }
   }
   &__icon {
     fill: currentColor;
+    width: 14px;
+    height: 10px;
+    @include desktop {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &__icon-tel {
+    fill: currentColor;
+    width: 10px;
+    height: 14px;
+    @include desktop {
+      height: 16px;
+    }
+  }
+}
+.menu-open {
+  margin-left: auto;
+  @include tablet {
+    display: none;
+  }
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #ffffff;
+}
+.mob-menu__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+.mob-menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mob-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-menu__nav-link {
+  @include font(500, 40px, 1.17, 0.02em);
+}
+.mob-menu__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mob-menu__contacts-link {
+  @include font(500, 26px, 1.17, 0.02em);
+  color: var(--accent-color);
+  @include mobile {
+    font-size: 34px;
+  }
+  &--mail {
+    font-size: 24px;
+    color: var(--primary-text-color);
+  }
+}
+.mob-menu__socials-list {
+  display: flex;
+}
+.mob-menu__socials-item:not(:last-child) {
+  margin-right: 10px;
+  position: relative;
+  @include mobile {
+    margin-right: 20px;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    content: '';
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    @include mobile {
+      right: -10px;
+    }
+  }
+}
+.mob-menu__socials-link {
+  @include font(500, 12px, 1.22, 0.02em);
+  color: var(--accent-color);
+  @include mobile {
+    font-size: 18px;
   }
 }

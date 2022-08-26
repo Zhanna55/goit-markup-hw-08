@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo header__logo" href="./index.html" lang="en"
@@ -40,7 +40,7 @@
         <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com"
-              ><svg class="contacts__icon" width="16" height="12">
+              ><svg class="contacts__icon">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -48,15 +48,83 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__link link" href="tel:+380961111111"
-              ><svg class="contacts__icon" width="10" height="16">
+              ><svg class="contacts__icon-tel">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button class="menu-open" type="button"></button>
+      <div class="mob-menu is-hidden">
+       <div class="mob-menu__container">
+        <button type="button" class="mob-menu__close"></button>
+        <nav class="mob-navigation">
+          <ul class="mob-menu__nav-list list">
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link mob-menu__nav-link--current link" href="">Студія</a>
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-menu__nav-item">
+              <a class="mob-menu__nav-link link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="mob-menu__contacts-list list">
+          <li class="mob-menu__contacts-item">
+            <a class="mob-menu__contacts-link link" href="tel:+380961111111"
+              >+38 096 111 11 11</a>
+          </li>
+          <li class="mob-menu__contacts-item">
+            <a class="mob-menu__contacts-link mob-menu__contacts-link--mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+          </li>
+          
+        </ul>
+        <ul class="mob-menu__socials-list list">
+                  <li class="mob-menu__socials-item">
+                    <a
+                      class="mob-menu__socials-link link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >Instagram
+                      </a>
+                  </li>
+                  <li class="mob-menu__socials-item">
+                    <a
+                      class="mob-menu__socials-link link"
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >Twitter 
+                    </a>
+                  </li>
+                  <li class="mob-menu__socials-item">
+                    <a
+                      class="mob-menu__socials-link link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >Facebook 
+                    </a>
+                  </li>
+                  <li class="mob-menu__socials-item">
+                    <a
+                      class="mob-menu__socials-link link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >LinkedIn 
+                    </a>
+                  </li>
+                </ul>
+       </div>
+      <div>
+
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -579,5 +647,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
   </body>
 </html>
