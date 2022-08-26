@@ -55,7 +55,9 @@
   }
 }
 .projects-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
   &:hover,
   &:focus {
@@ -99,6 +101,7 @@
   }
 }
 .project-card {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
