@@ -4,6 +4,10 @@
   text-decoration: none;
   display: block;
   color: var(--logo-color);
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
   &__decoration {
     color: var(--accent-color);
   }
