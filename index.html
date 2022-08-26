@@ -55,78 +55,85 @@
             >
           </li>
         </ul>
-        <button class="menu-open" type="button"><svg class="menu-open__icon" width="40" height="40">
-          <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
-        </svg></button>
-      <div class="mob-menu is-hidden">
-       <div class="mob-menu__container">
-        <button type="button" class="mob-menu__close"><svg class="mob-menu__icon" width="40" height="40">
-          <use href="./images/symbol-defs.svg#icon-close_40px"></use>
-        </svg></button>
-        <nav class="mob-navigation">
-          <ul class="mob-menu__nav-list list">
-            <li class="mob-menu__nav-item">
-              <a class="mob-menu__nav-link mob-menu__nav-link--current link" href="">Студія</a>
-            </li>
-            <li class="mob-menu__nav-item">
-              <a class="mob-menu__nav-link link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="mob-menu__nav-item">
-              <a class="mob-menu__nav-link link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="mob-menu__contacts-list list">
-          <li class="mob-menu__contacts-item">
-            <a class="mob-menu__contacts-link link" href="tel:+380961111111"
-              >+38 096 111 11 11</a>
-          </li>
-          <li class="mob-menu__contacts-item">
-            <a class="mob-menu__contacts-link mob-menu__contacts-link--mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a>
-          </li>
-          
-        </ul>
-        <ul class="mob-menu__socials-list list">
-                  <li class="mob-menu__socials-item">
-                    <a
-                      class="mob-menu__socials-link link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >Instagram
-                      </a>
-                  </li>
-                  <li class="mob-menu__socials-item">
-                    <a
-                      class="mob-menu__socials-link link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >Twitter 
-                    </a>
-                  </li>
-                  <li class="mob-menu__socials-item">
-                    <a
-                      class="mob-menu__socials-link link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >Facebook 
-                    </a>
-                  </li>
-                  <li class="mob-menu__socials-item">
-                    <a
-                      class="mob-menu__socials-link link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >LinkedIn 
-                    </a>
-                  </li>
-                </ul>
-       </div>
-      <div>
-
+        <button class="menu-open" type="button">
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden">
+          <div class="mob-menu__container">
+            <button type="button" class="mob-menu__close">
+              <svg class="mob-menu__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <nav class="mob-navigation">
+              <ul class="mob-menu__nav-list list">
+                <li class="mob-menu__nav-item">
+                  <a class="mob-menu__nav-link mob-menu__nav-link--current link" href="">Студія</a>
+                </li>
+                <li class="mob-menu__nav-item">
+                  <a class="mob-menu__nav-link link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-menu__nav-item">
+                  <a class="mob-menu__nav-link link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="mob-menu__contacts-list list">
+              <li class="mob-menu__contacts-item">
+                <a class="mob-menu__contacts-link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu__contacts-item">
+                <a
+                  class="mob-menu__contacts-link mob-menu__contacts-link--mail link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu__socials-list list">
+              <li class="mob-menu__socials-item">
+                <a
+                  class="mob-menu__socials-link link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Instagram
+                </a>
+              </li>
+              <li class="mob-menu__socials-item">
+                <a
+                  class="mob-menu__socials-link link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Twitter
+                </a>
+              </li>
+              <li class="mob-menu__socials-item">
+                <a
+                  class="mob-menu__socials-link link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Facebook
+                </a>
+              </li>
+              <li class="mob-menu__socials-item">
+                <a
+                  class="mob-menu__socials-link link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -193,22 +200,24 @@
           <ul class="picture-list list">
             <li class="picture-list__item">
               <picture>
-                <source srcset="./images/box1.jpg 1x,
-                ./images/works1-2x_optimized.jpg 2x"
-                media="(min-width:1200px)"/>
-                <img src="./images/box1.jpg" alt="Десктопні додатки"/>
+                <source
+                  srcset="./images/box1.jpg 1x, ./images/works1-2x_optimized.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/box1.jpg" alt="Десктопні додатки" />
               </picture>
-              
+
               <div class="picture-list__thumb">
                 <h3 class="picture-list__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="picture-list__item">
               <picture>
-                <source srcset="./images/box2.jpg 1x,
-                ./images/works2-2x_optimized.jpg 2x"
-                media="(min-width:1200px)"/>
-              <img src="./images/box2.jpg" alt="Мобільні додатки"/>
+                <source
+                  srcset="./images/box2.jpg 1x, ./images/works2-2x_optimized.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/box2.jpg" alt="Мобільні додатки" />
               </picture>
               <div class="picture-list__thumb">
                 <h3 class="picture-list__title">Мобільні додатки</h3>
@@ -216,10 +225,11 @@
             </li>
             <li class="picture-list__item">
               <picture>
-                <source srcset="./images/box3.jpg 1x,
-                ./images/works3-2x_optimized.jpg 2x"
-                media="(min-width:1200px)"/>
-              <img src="./images/box3.jpg" alt="Дизайнерські рішення" />
+                <source
+                  srcset="./images/box3.jpg 1x, ./images/works3-2x_optimized.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/box3.jpg" alt="Дизайнерські рішення" />
               </picture>
               <div class="picture-list__thumb">
                 <h3 class="picture-list__title">Дизайнерські рішення</h3>
@@ -234,18 +244,25 @@
           <ul class="gallery-list list">
             <li class="gallery-list__item">
               <picture>
-                <source srcset="./images/team1.jpg 1x,
-                ./images/team1-2x_optimized.jpg 2x"
-                media="(min-width:1200px)"/>
-                <source srcset="./images/team1-tab_optimized.jpg 1x,
-                ./images/team1-tab-2x_optimized.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="./images/team1.jpg 1x, ./images/team1-2x_optimized.jpg 2x"
+                  media="(min-width:1200px)"
                 />
-                <source srcset="./images/team1-mob_optimized.jpg 1x,
-                ./images/team1-mob-2x_optimized.jpg 2x"
-                 media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/team1-tab_optimized.jpg    1x,
+                    ./images/team1-tab-2x_optimized.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-              <img src="./images/team1.jpg" alt="Product Designer" />
+                <source
+                  srcset="
+                    ./images/team1-mob_optimized.jpg    1x,
+                    ./images/team1-mob-2x_optimized.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team1.jpg" alt="Product Designer" />
               </picture>
               <div class="gallery-list__card">
                 <h3 class="gallery-list__title">Ігор Дем'яненко</h3>
@@ -305,18 +322,25 @@
             </li>
             <li class="gallery-list__item">
               <picture>
-                <source srcset="./images/team2.jpg 1x,
-                ./images/team2-2x_optimized.jpg 2x"
-                media="(min-width:1200px)"/>
-                <source srcset="./images/team2-tab_optimized.jpg 1x,
-                ./images/team2-tab-2x_optimized.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="./images/team2.jpg 1x, ./images/team2-2x_optimized.jpg 2x"
+                  media="(min-width:1200px)"
                 />
-                <source srcset="./images/team2-mob_optimized.jpg 1x,
-                ./images/team2-mob-2x_optimized.jpg 2x"
-                 media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/team2-tab_optimized.jpg    1x,
+                    ./images/team2-tab-2x_optimized.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-              <img src="./images/team2.jpg" alt="Frontend Developer"/>
+                <source
+                  srcset="
+                    ./images/team2-mob_optimized.jpg    1x,
+                    ./images/team2-mob-2x_optimized.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team2.jpg" alt="Frontend Developer" />
               </picture>
               <div class="gallery-list__card">
                 <h3 class="gallery-list__title">Ольга Рєпіна</h3>
@@ -376,18 +400,25 @@
             </li>
             <li class="gallery-list__item">
               <picture>
-                <source srcset="./images/team3.jpg 1x,
-                ./images/team3-2x_optimized.jpg 2x"
-                media="(min-width:1200px)"/>
-                <source srcset="./images/team3-tab_optimized.jpg 1x,
-                ./images/team3-tab-2x_optimized.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="./images/team3.jpg 1x, ./images/team3-2x_optimized.jpg 2x"
+                  media="(min-width:1200px)"
                 />
-                <source srcset="./images/team3-mob_optimized.jpg 1x,
-                ./images/team3-mob-2x_optimized.jpg 2x"
-                 media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/team3-tab_optimized.jpg    1x,
+                    ./images/team3-tab-2x_optimized.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-              <img src="./images/team3.jpg" alt="Marketing"/>
+                <source
+                  srcset="
+                    ./images/team3-mob_optimized.jpg    1x,
+                    ./images/team3-mob-2x_optimized.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team3.jpg" alt="Marketing" />
               </picture>
               <div class="gallery-list__card">
                 <h3 class="gallery-list__title">Микола Тарасов</h3>
@@ -447,18 +478,25 @@
             </li>
             <li class="gallery-list__item">
               <picture>
-                <source srcset="./images/team4.jpg 1x,
-                ./images/team4-2x_optimized.jpg 2x"
-                media="(min-width:1200px)"/>
-                <source srcset="./images/team4-tab_optimized.jpg 1x,
-                ./images/team4-tab-2x_optimized.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="./images/team4.jpg 1x, ./images/team4-2x_optimized.jpg 2x"
+                  media="(min-width:1200px)"
                 />
-                <source srcset="./images/team4-mob_optimized.jpg 1x,
-                ./images/team4-mob-2x_optimized.jpg 2x"
-                 media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/team4-tab_optimized.jpg    1x,
+                    ./images/team4-tab-2x_optimized.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-              <img src="./images/team4.jpg" alt="UI Designer"/>
+                <source
+                  srcset="
+                    ./images/team4-mob_optimized.jpg    1x,
+                    ./images/team4-mob-2x_optimized.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team4.jpg" alt="UI Designer" />
               </picture>
               <div class="gallery-list__card">
                 <h3 class="gallery-list__title">Михайло Єрмаков</h3>
@@ -719,6 +757,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-     <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
