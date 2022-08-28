@@ -146,6 +146,9 @@
 }
 .mob-menu__nav-link {
   @include font(500, 40px, 1.17, 0.02em);
+  &--current {
+    color: var(--accent-color);
+  }
 }
 .mob-menu__contacts-item:not(:last-child) {
   margin-bottom: 32px;

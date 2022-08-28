@@ -8,6 +8,9 @@
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
+  @include tablet {
+    justify-content: space-around;
+  }
   @include desktop {
     flex-wrap: nowrap;
   }
@@ -17,8 +20,6 @@
   margin-bottom: 60px;
   @include tablet {
     width: auto;
-    margin-left: 76px;
-    margin-right: 165px;
   }
   @include desktop {
     margin-bottom: 0;
@@ -35,11 +36,7 @@
   }
 }
 .footer__social {
-  width: 100%;
   margin-bottom: 60px;
-  @include tablet {
-    width: auto;
-  }
   @include desktop {
     margin-bottom: 0;
     margin-right: 93px;
